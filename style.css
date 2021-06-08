@@ -32,7 +32,7 @@
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--black_000000);
     text-transform: uppercase;
     text-align: center;
@@ -54,14 +54,14 @@ img {
     line-height: 26px;
     color: var(--black_000000);
     background-color: var(--white_FFFFFF);
-    
+    font-weight: bold;    
 }
 
 .site_navigation {
     list-style: none; 
 }
 
-.site-navigation a,{
+.site-navigation a {
     color: var(--black_000000);
 }
 
@@ -74,8 +74,13 @@ img {
     color: var(--grey_766357);        
 }
 
-.welcome {
+.greetings {
     line-height: 26px;
+}
+
+.welcome {
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .features_list {
@@ -85,6 +90,7 @@ img {
 .feature_item h3 {
     font-size: 21px;
     line-height: 21px;
+    font-weight: bold;
 }
 
 .feature_special {
@@ -101,6 +107,7 @@ img {
 .entertainment_item h3 {
     font-size: 21px;
     line-height: 21px;
+    font-weight: bold;
 }
 
 .modal {
@@ -165,9 +172,14 @@ img {
     color: var(--black_000000);   
 }
 
+.find_hotel_form {
+    font-weight: bold;
+}
+
 .footer_info {
     font-size: 21px;
     line-height: 26px;
+    font-weight: bold;
 }
 
  
