@@ -235,6 +235,7 @@ img {
 
 .catalog-filter {
     background-image: url(img/catalog-imgs/background-fitler.jpg);
+    background-color: var(--blue-hover);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 14px;
