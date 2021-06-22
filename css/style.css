@@ -105,14 +105,22 @@ img {
     background-size: cover;
     box-sizing: border-box;
     background-image: url(/img/main-page-imgs/background-photo.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.greetings-text {
+    background-color: var(--white-blocks);
+    margin: 0;
+    padding: 0; 
 }
 
 .welcome {
     font-size: 21px;
     font-weight: bold;
     box-sizing: border-box;
+    margin: 0;
 }
-
 
 .features-list {
     list-style: none;    
@@ -121,9 +129,8 @@ img {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--white-basic);
 }
-
-
 
 .feature-item h3 {
     font-size: 21px;
@@ -140,12 +147,27 @@ img {
     justify-content: center;
 }
 
-.feature-special {
+.feature-special-1 {
     background-color: var(--blue-light);
     color:var(--white-blocks);
     box-sizing: border-box;
 
     grid-column: 1/-1;
+
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.feature-special-2 {
+    background-color: var(--blue-light);
+    color:var(--white-blocks);
+    box-sizing: border-box;
+
+    grid-column: 1/-1;
+
+    display: flex; 
+    flex-direction: row-reverse; 
+    flex-wrap: nowrap;
 }
 
 .entertainments-list {
@@ -198,6 +220,10 @@ img {
     padding: 160px 66px 86px;
 }
 
+.feature-item-text h3{
+    box-sizing: border-box;
+}
+
 .true-town {
     box-sizing: border-box;
     padding: 48px 49px 60px;
@@ -210,17 +236,44 @@ img {
 
 .square {
     box-sizing: border-box;
-    padding: 46px 98px 60px;
+    padding: 50px 96px 60px;
+    height: 256px;
+}
+
+.square p {
+    box-sizing: border-box;
+    margin-top: 33px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .road {
     box-sizing: border-box;
-    padding: 49px 68px 60px; 
+    padding: 48px 68px 60px; 
+}
+
+.road p {
+    box-sizing: border-box;
+    margin-top: 34px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .tourists {
     box-sizing: border-box;
-    padding: 49px 76px 60px; 
+    padding: 48px 76px 60px; 
+}
+
+.tourists p {
+    box-sizing: border-box;
+    margin-top: 34px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.interested {
+    margin-top: 0;
+    padding-top: 56px;
 }
 
 .modal {
@@ -578,24 +631,47 @@ img {
 }
 
 .rating {
+    box-sizing: border-box;
     background-color: var(--grey-form);
     box-sizing: border-box;
 }
 
 .amara-resort-spa {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .desert-quail-inn {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .villas-at-poco-diablo {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.results-img {
+    box-sizing: border-box;
+    width: 208px;
+    justify-content: flex-start;
+    padding-left: 73px;
+}
+
+.results-text {
+    box-sizing: border-box;
+    width: 792px;
+}
+
+.results-rating {
+    box-sizing: border-box;
+    width: 200px;
+    align-items: flex-end;
+    padding-right: 73px;
 }
