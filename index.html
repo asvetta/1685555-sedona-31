@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -14,70 +14,79 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
-          <li><a href="blank.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
+        <div class="main-navigation-wrapper">
+            <a class="main-header-logo">
+              <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта">
+            </a>
+          <ul class="site-navigation">
+            <li class="navigation-info"><a href="blank.html">Информация</a></li>
+            <li class="navigation-photo"><a href="blank.html">Фото и видео</a></li>
+            <li class="navigation-map"><a href="blank.html">Карта штата</a></li>
+            <li class="navigation-hotels"><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
       </nav>
     </header>  
     <main class="center">
         <section class="greetings">
-          <h1 class="welcome">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="greetings-picture">
+            <img src="img/welcome-imgs/welcome.svg" width="457" height="351" alt="Welcome to the georgeous Sedona! Because the Grand Canyon sucks! ">
+          </div>
+          <div class="greetings-text">
+            <h1 class="welcome">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
         </section>
         <section class="features">
           <h2>Преимущества</h2>
-            <ol class="features-list">
-              <li class="feature-item feature-special">
-                <h3>Настоящий городок</h3>
-                <p>— №1 —</p>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <ul class="features-list">
+              <li class="feature-item feature-special" style="display: flex; flex-wrap: wrap">
+                <div class="feature-item-text true-town" style="width: 400px">
+                  <h3>Настоящий городок</h3>
+                  <p>— №1 —</p>
+                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
                 <img src="img/main-page-imgs/cafe-img.jpg" width="800" height="256" alt="Повседневная атмосфера города">
                 <ul class="entertainments-list">
-                  <li class="entertainment-item">
-                    <img src="img/icons-entertainments/home-icon.svg" width="75" height="72" alt="Иконка домика">
+                  <li class="entertainment-item house">
                     <h3>Жильё</h3>
                     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                   </li>
-                  <li class="entertainment-item">
-                    <img src="img/icons-entertainments/food-icon.svg" width="75" height="72" alt="Иконка бургера">
+                  <li class="entertainment-item food">
                     <h3>Еда</h3>
                     <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </li>
-                  <li class="entertainment-item">
-                    <img src="img/icons-entertainments/present-icon.svg" width="75" height="72" alt="Иконка подарока">
+                  <li class="entertainment-item souvenirs">
                     <h3>Сувениры</h3>
                     <p>Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
               </li>
-              <li class="feature-item feature-special">
-                <h3>Там есть Мост дьявола</h3>
-                <p>— №2 —</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                <img src="img/main-page-imgs/bridge-img.jpg" width="800" height="256" alt="Каменный проход над пропастью">
+              <li class="feature-item feature-special" style="display: flex; flex-direction: row-reverse; flex-wrap: nowrap">
+                <div class="feature-item-text bridge">
+                  <h3>Там есть Мост дьявола</h3>
+                  <p>— №2 —</p>
+                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+                  <img src="img/main-page-imgs/bridge-img.jpg" width="800" height="256" alt="Каменный проход над пропастью">
               </li>
-              <li class="feature-item">
-                <h3>Небольшая площадь</h3>
-                <p>— №3 —</p>
-                <p>Все достопримечательности находятся очень близко</p>
+              <li class="feature-item square">
+                  <h3>Небольшая площадь</h3>
+                  <p>— №3 —</p>
+                  <p>Все достопримечательности находятся очень близко</p>
               </li>
-              <li class="feature-item">
-                <h3>Красивая дорога</h3>
-                <p>— №4 —</p>
-                <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+              <li class="feature-item road">
+                  <h3>Красивая дорога</h3>
+                  <p>— №4 —</p>
+                  <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
               </li>
-              <li class="feature-item">
-                <h3>Мало туристов</h3>
-                <p>— №5 —</p>
-                <p>Большинство едет в гранд каньон и толпится там</p>
+              <li class="feature-item tourists">
+                  <h3>Мало туристов</h3>
+                  <p>— №5 —</p>
+                  <p>Большинство едет в гранд каньон и толпится там</p>
               </li>
-            </ol>
+            </ul>
         </section>
         <section class="modal">
           <h2>Заинтересовались?</h2>
@@ -111,7 +120,7 @@
           </a>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer container">
         <p class="footer-info">
           #visitsedona<br>
           <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -132,7 +141,7 @@
         </section>
         <p class="footer-copyright">
           Website by
-          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
       </footer>
   </body>
