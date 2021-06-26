@@ -13,17 +13,27 @@
   </head>
   <body class="page-body catalog-body">
     <header class="catalog-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта">
-        </a>
-        <ul class="site-navigation">
-          <li class="navigation-info"><a href="blank.html">Информация</a></li>
-          <li class="navigation-photo"><a href="blank.html">Фото и видео</a></li>
-          <li class="navigation-map"><a href="blank.html">Карта штата</a></li>
-          <li class="navigation-hotels"><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+      <div class="main-navigation-wrapper">
+        <nav class="main-navigation">
+          <div class="main-navigation-wrapper">
+            <div class="logo-wrapper">
+              <a class="main-header-logo" href="index.html">
+                <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта">
+              </a>
+            </div>
+            <ul class="site-navigation">
+              <div class="flex-navigation-left">
+                <li class="navigation-info"><a href="blank.html">Информация</a></li>
+                <li class="navigation-photo"><a href="blank.html">Фото и видео</a></li>
+              </div>
+              <div class="flex-navigation-right">
+                <li class="navigation-map"><a href="blank.html">Карта штата</a></li>
+                <li class="navigation-hotels"><a href="catalog.html">Гостиницы</a></li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
       <main class="catalog-center">
           <h1>Поиск гостиницы</h1>
@@ -84,13 +94,17 @@
             <div class="sorting-grid">
               <h3>Найдено: 3</h3>  
               <div class="results-container">
-                <p class="results-sorting">Сортировка:</p>
+                <p class="results-sorting-name">Сортировка:</p>
                 <ul class="results-sorting-list">
-                  <li class="results-sorting-item"><a href="#"></a>По цене</li>
-                  <li class="results-sorting-item"><a href="#"></a>По типу</li>
-                  <li class="results-sorting-item"><a href="#"></a>По рейтингу</li>
-                  <li class="results-sorting-item sorting-descending-ascending"><a href="#"></a>Сортировка по убыванию</li>
-                  <li class="results-sorting-item sorting-descending-ascending"><a href="#"></a>Сортировка по возрастанию</li>
+                  <div class="results-sorting-item-flex">
+                    <li class="results-sorting-item"><a href="#"></a>По цене</li>
+                    <li class="results-sorting-item"><a href="#"></a>По типу</li>
+                    <li class="results-sorting-item"><a href="#"></a>По рейтингу</li>
+                  </div>
+                  <div class="sorting-descending-ascending">
+                    <li class="results-sorting-item"><a href="#"></a>Сортировка по убыванию</li>
+                    <li class="results-sorting-item"><a href="#"></a>Сортировка по возрастанию</li>
+                  </div>
                 </ul>
               </div>
             </div>

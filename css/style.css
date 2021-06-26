@@ -67,14 +67,64 @@ img {
     background-color: var(--white-blocks);
     font-weight: bold;    
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+.main-navigation-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 .site-navigation {
     list-style: none; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
 }
+
+.main-header-logo {
+    box-sizing: border-box;
+    width: 400px;
+
+    position: relative;
+    top: 0;
+    left: 531px;
+}
+
+.flex-navigation-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+    margin: 0;
+}
+
+.navigation-info {
+    width: 200px;
+}
+
+.navigation-photo {
+    width: 200px;
+}
+
+
+.flex-navigation-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+    margin: 0;
+}
+
+.navigation-map {
+    width: 200px;
+}
+
 
 .site-navigation a {
     color: var(--black-text);
@@ -91,6 +141,7 @@ img {
     color: var(--grey-button);  
     box-sizing: border-box;      
 }
+
 
 
 .greetings {
@@ -434,6 +485,10 @@ img {
     padding-left: 125px;
 }
 
+
+
+
+
 /* Разметка каталога */
 
 .catalog-filter {
@@ -526,11 +581,6 @@ img {
     padding-right: 12px;
 }
 
-.results-sorting {
-    font-size: 12px;
-    line-height: 12px;
-    box-sizing: border-box;
-}
 
 .results-sorting-list {
     list-style: none;
@@ -539,11 +589,14 @@ img {
     box-sizing: border-box;
 
     display: flex;
+    direction: column;
 }
 
 .results-container {
     box-sizing: border-box;
     padding-left: 36px;
+    width: 927px;
+    display: flex;
 }
 
 .results-sorting-item {
@@ -552,6 +605,20 @@ img {
     color: var(--black-text);
     opacity: 0.3;
     box-sizing: border-box;
+}
+
+.results-sorting-item-flex {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sorting-descending-ascending {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .results-sorting-item:hover {
@@ -667,6 +734,9 @@ img {
 .results-text {
     box-sizing: border-box;
     width: 792px;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 .results-rating {
