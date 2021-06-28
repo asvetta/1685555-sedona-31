@@ -12,30 +12,22 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body catalog-body">
-    <header class="catalog-header">
-      <div class="main-navigation-wrapper">
-        <nav class="main-navigation">
-          <div class="main-navigation-wrapper">
-            <div class="logo-wrapper">
-              <a class="main-header-logo" href="index.html">
-                <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта">
-              </a>
-            </div>
-            <ul class="site-navigation">
-              <div class="flex-navigation-left">
-                <li class="navigation-info"><a href="blank.html">Информация</a></li>
-                <li class="navigation-photo"><a href="blank.html">Фото и видео</a></li>
-              </div>
-              <div class="flex-navigation-right">
-                <li class="navigation-map"><a href="blank.html">Карта штата</a></li>
-                <li class="navigation-hotels"><a href="catalog.html">Гостиницы</a></li>
-              </div>
-            </ul>
-          </div>
-        </nav>
-      </div>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта">
+          </a>
+          <ul class="site-navigation">
+            <li class="navigation-info"><a href="blank.html">Информация</a></li>
+            <li class="navigation-photo"><a href="blank.html">Фото и видео</a></li>
+            <li class="navigation-map"><a href="blank.html">Карта штата</a></li>
+            <li class="navigation-hotels"><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-      <main class="catalog-center">
+    <main class="catalog-center">
           <h1>Поиск гостиницы</h1>
           <section class="catalog-filter">
             <h2 style="display: none">Фильтр гостиниц</h2>
@@ -78,9 +70,9 @@
                     </ul>
                   </fieldset>
                 </div>
-                <div class="filter-column">
+                <div class="filter-column filter-column-3">
                   <p class="catalog-filter-name">
-                        Стоимость в сутки (Р):
+                        Стоимость в сутки (Р):<br>
                         <input class="catalog-filter-price" type="number" name="price_from" placeholder="от 0" min="0" max="3000">
                         <input class="catalog-filter-price" type="number" name="price_to" placeholder="До 3000" min="0" max="3000">
                   </p>
@@ -96,15 +88,11 @@
               <div class="results-container">
                 <p class="results-sorting-name">Сортировка:</p>
                 <ul class="results-sorting-list">
-                  <div class="results-sorting-item-flex">
-                    <li class="results-sorting-item"><a href="#"></a>По цене</li>
-                    <li class="results-sorting-item"><a href="#"></a>По типу</li>
-                    <li class="results-sorting-item"><a href="#"></a>По рейтингу</li>
-                  </div>
-                  <div class="sorting-descending-ascending">
-                    <li class="results-sorting-item"><a href="#"></a>Сортировка по убыванию</li>
-                    <li class="results-sorting-item"><a href="#"></a>Сортировка по возрастанию</li>
-                  </div>
+                  <li class="results-sorting-item"><a href="#"></a>По цене</li>
+                  <li class="results-sorting-item"><a href="#"></a>По типу</li>
+                  <li class="results-sorting-item"><a href="#"></a>По рейтингу</li>
+                  <li class="results-sorting-item sorting-item-end-down"><a href="#"></a>Сортировка по убыванию</li>
+                  <li class="results-sorting-item sorting-item-end-up"><a href="#"></a>Сортировка по возрастанию</li>
                 </ul>
               </div>
             </div>

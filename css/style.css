@@ -39,7 +39,6 @@
     font-weight: 400;
     color: var(--black-text);
     text-transform: uppercase;
-    text-align: center;
     background-color: var(--white-body);
     box-sizing: border-box;
     
@@ -71,17 +70,12 @@ img {
     padding: 0;
 }
 
-.main-navigation-wrapper {
-    display: flex;
-    justify-content: flex-start;
-}
-
-
 .site-navigation {
     list-style: none; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 1200px;
 
     display: flex;
     justify-content: space-between;
@@ -96,33 +90,32 @@ img {
     left: 531px;
 }
 
-.flex-navigation-left {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 400px;
-    margin: 0;
-}
-
 .navigation-info {
+    box-sizing: border-box;
     width: 200px;
+    margin: 0;
+    padding-left: 73px;
 }
 
 .navigation-photo {
+    box-sizing: border-box;
     width: 200px;
-}
-
-
-.flex-navigation-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 400px;
-    margin: 0;
+    margin-right: 130px;
 }
 
 .navigation-map {
+    box-sizing: border-box;
     width: 200px;
+    margin-left: 130px;
+    text-align: end;
+}
+
+.navigation-hotels {
+    box-sizing: border-box;
+    width: 200px;
+    margin: 0;
+    text-align: end;
+    padding-right: 73px;
 }
 
 
@@ -160,10 +153,13 @@ img {
     padding: 0;
 }
 
+
 .greetings-text {
+    box-sizing: border-box;
     background-color: var(--white-blocks);
     margin: 0;
     padding: 0; 
+    text-align: center;
 }
 
 .welcome {
@@ -171,6 +167,16 @@ img {
     font-weight: bold;
     box-sizing: border-box;
     margin: 0;
+    text-align: center;
+}
+
+img.welcome-sedona {
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 76px;
+    padding-bottom: 216px;
 }
 
 .features-list {
@@ -188,6 +194,7 @@ img {
     line-height: 21px;
     font-weight: bold;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .feature-item-text {
@@ -196,6 +203,7 @@ img {
     height: 256px;
     padding-top: 46px;
     justify-content: center;
+    text-align: center;
 }
 
 .feature-special-1 {
@@ -241,6 +249,7 @@ img {
     line-height: 21px;
     font-weight: bold;
     box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -251,6 +260,7 @@ img {
     box-sizing: border-box;
     width: 400px;
     padding: 160px 73px 86px;
+    text-align: center;
 }
 
 .food {
@@ -260,6 +270,8 @@ img {
     box-sizing: border-box;
     width: 400px;
     padding: 160px 60px 86px;
+    text-align: center;
+
 }
 
 .souvenirs {
@@ -269,26 +281,34 @@ img {
     box-sizing: border-box;
     width: 400px;
     padding: 160px 66px 86px;
+    text-align: center;
 }
 
 .feature-item-text h3{
     box-sizing: border-box;
+    text-align: center;
 }
 
 .true-town {
     box-sizing: border-box;
     padding: 48px 49px 60px;
+    text-align: center;
+
 }
 
 .bridge {
     box-sizing: border-box;
     padding: 52px 50px 59px;
+    text-align: center;
+
 }
 
 .square {
     box-sizing: border-box;
     padding: 50px 96px 60px;
     height: 256px;
+    text-align: center;
+
 }
 
 .square p {
@@ -296,11 +316,15 @@ img {
     margin-top: 33px;
     padding: 0;
     margin-bottom: 0;
+    text-align: center;
+
 }
 
 .road {
     box-sizing: border-box;
     padding: 48px 68px 60px; 
+    text-align: center;
+
 }
 
 .road p {
@@ -308,11 +332,14 @@ img {
     margin-top: 34px;
     padding: 0;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .tourists {
     box-sizing: border-box;
     padding: 48px 76px 60px; 
+    text-align: center;
+
 }
 
 .tourists p {
@@ -320,36 +347,51 @@ img {
     margin-top: 34px;
     padding: 0;
     margin-bottom: 0;
+    text-align: center;
+
 }
 
 .interested {
     margin-top: 0;
     padding-top: 56px;
+    text-align: center;
 }
 
 .modal {
     color: var(--black-text);
     background-color: var(--white-blocks); 
     box-sizing: border-box; 
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
 }
 
 .modal h2 {
     font-size: 30px;
     line-height: 24px;   
     box-sizing: border-box; 
+    text-align: center;
 }
 
+.modal-descripion {
+    text-align: center;
+}
 
 .modal-open {
     background-color: var(--grey-button);
     color: var(--white-blocks);
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal-submit {
     background-color: var(--blue-light);
     color: var(--white-blocks);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .button {
@@ -361,30 +403,35 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .modal-open:hover {
     color: var(--white-blocks);
     background-color: var(--blue-hover);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .modal-open:focus {
     color: var(--white-blocks);
     background-color: var(--blue-focus);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .modal-submit:hover {
     color: var(--white-blocks);
     background-color: var(--grey-button-hover);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .modal-submit:focus {
     color: var(--white-blocks);
     background-color: var(--grey-button-focus);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .form-background {
@@ -395,10 +442,12 @@ img {
 .find-hotel-form {
     font-weight: bold;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .map {
     margin: o auto;
+    text-align: center;
 }
 
 .main-footer {
@@ -417,12 +466,14 @@ img {
     box-sizing: border-box;
     margin-left: 73px;
     justify-content: center;
+    text-align: center;
 }
 
  
 .footer-phone:hover {
     color: var(--blue-light);
     box-sizing: border-box;
+    text-align: center;
 }
 
     
@@ -430,8 +481,13 @@ img {
 .footer-phone:focus {
     color: var(--grey-button); 
     box-sizing: border-box;
+    text-align: center;
 }
     
+
+.footer-social {
+    text-align: center;
+}
   
 .footer-social .social-list {
     list-style: none;
@@ -439,6 +495,7 @@ img {
     padding: 0;
     box-sizing: border-box;
     justify-content: center;
+    text-align: center;
 }
    
   
@@ -446,16 +503,19 @@ img {
     color:var(--white-blocks);
     background-color: var(--blue-light);
     box-sizing: border-box;
+    text-align: center;
 }
   
 .social-button:hover {
     background-color: var(--blue-hover);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .social-button:focus {
     background-color: var(--blue-focus);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .footer-copyright {
@@ -465,16 +525,21 @@ img {
     box-sizing: border-box;
     margin-right: 73px;
     justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .footer-copyright .button:hover {
     color:var(--blue-light);
     box-sizing: border-box;
+    text-align: center;
 }
 
 .footer-copyright .button:focus {
     color:var(--grey-footer-focus);  
     box-sizing: border-box;
+    text-align: center;
 }
 
 .social-list {
@@ -483,6 +548,7 @@ img {
     gap: 6px;
     padding-right: 125px;
     padding-left: 125px;
+    text-align: center;
 }
 
 
@@ -522,6 +588,17 @@ img {
     padding-left: 73px;
 }
 
+.filter-column-3 {
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 200px;
+    padding-right: 73px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
 .infrastructure-list {
     list-style: none;
     margin: 0;
@@ -530,7 +607,7 @@ img {
 
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .accommodation-list {
@@ -572,31 +649,43 @@ img {
     display: grid;
     grid-template-columns: 200px 1fr;
     box-sizing: border-box;
-    text-align: left;
+    padding: 0;
 }
 
 .sorting-grid h3 {
     box-sizing: border-box;
     padding-left: 73px;
     padding-right: 12px;
+    margin-top: 33px;
 }
 
 
 .results-sorting-list {
     list-style: none;
-    margin: 0;
-    padding: 0; 
+    margin-top: 38px;
+    padding-left: 40px;
     box-sizing: border-box;
+    font-size: 12px;
+    line-height: 18px;
 
     display: flex;
-    direction: column;
 }
+
 
 .results-container {
     box-sizing: border-box;
-    padding-left: 36px;
-    width: 927px;
+    padding-left: 35px;
+    width: 1000px;
     display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.results-sorting-name {
+   margin-top: 35px;
+   padding: 0;
+   font-size: 12px;
+   line-height: 18px;
 }
 
 .results-sorting-item {
@@ -605,6 +694,17 @@ img {
     color: var(--black-text);
     opacity: 0.3;
     box-sizing: border-box;
+    margin-right: 33px;
+    width: 100px;
+}
+
+.sorting-item-end-down {
+    width: 100px;
+    margin-left: 200px;
+}
+
+.sorting-item-end-up {
+    width: 100px;
 }
 
 .results-sorting-item-flex {
@@ -735,7 +835,7 @@ img {
     box-sizing: border-box;
     width: 792px;
     align-self: flex-start;
-    margin: 0;
+    margin-left: 20px;
     padding: 0;
 }
 
