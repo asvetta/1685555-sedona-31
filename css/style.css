@@ -80,16 +80,15 @@ img {
     width: 1200px;
 
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .main-header-logo {
     box-sizing: border-box;
-    width: 400px;
 
     position: absolute;
-    top: 0;
-    left: 531px;
+    left: 50%;
+    transform: translatex(-50%)
 }
 
 .navigation-info {
@@ -148,7 +147,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    background-image: url(/img/main-page-imgs/background-photo.jpg);
+    background-image: url(../img/main-page-imgs/background-photo.jpg);
     margin: 0;
     padding: 0;
 }
@@ -254,7 +253,7 @@ img.welcome-sedona {
 
 
 .house {
-    background-image: url("/img/icons-entertainments/home-icon.svg");
+    background-image: url(../img/icons-entertainments/home-icon.svg);
     background-repeat: no-repeat;
     background-position: center 60px;
     box-sizing: border-box;
@@ -264,7 +263,7 @@ img.welcome-sedona {
 }
 
 .food {
-    background-image: url("/img/icons-entertainments/food-icon.svg");
+    background-image: url(../img/icons-entertainments/food-icon.svg);
     background-repeat: no-repeat;
     background-position: center 60px;
     box-sizing: border-box;
@@ -275,7 +274,7 @@ img.welcome-sedona {
 }
 
 .souvenirs {
-    background-image: url("/img/icons-entertainments/present-icon.svg");
+    background-image: url(../img/icons-entertainments/present-icon.svg);
     background-repeat: no-repeat;
     background-position: center 60px;
     box-sizing: border-box;
@@ -455,7 +454,9 @@ img.welcome-sedona {
     color: var(--black-text);   
     box-sizing: border-box;
     text-align: center;
-    padding-top: 26px;
+    padding: 26px, 73px;
+    margin: 0;
+    align-items: center;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -467,7 +468,6 @@ img.welcome-sedona {
     line-height: 26px;
     font-weight: bold;
     box-sizing: border-box;
-    margin-left: 73px;
     text-align: center top;
 }
 
@@ -530,7 +530,7 @@ img.welcome-sedona {
 .twitter {
     display: block;
     box-sizing: border-box;
-    background-image: url(/img/footer-icons/twitter.svg);
+    background-image: url(../img/footer-icons/twitter.svg);
     background-color: var(--blue-light);
     background-repeat: no-repeat;
     background-position: center center;
@@ -541,7 +541,7 @@ img.welcome-sedona {
 .facebook {
     display: block;
     box-sizing: border-box;
-    background-image: url(/img/footer-icons/fb-icon.svg);
+    background-image: url(../img/footer-icons/fb-icon.svg);
     background-color: var(--blue-light);
     background-repeat: no-repeat;
     background-position: center center;
@@ -552,7 +552,7 @@ img.welcome-sedona {
 .youtube {
     display: block;
     box-sizing: border-box;
-    background-image: url(/img/footer-icons/youtube.svg);
+    background-image: url(../img/footer-icons/youtube.svg);
     background-color: var(--blue-light);
     background-repeat: no-repeat;
     background-position: center center;
@@ -563,7 +563,6 @@ img.welcome-sedona {
 .footer-copyright {
     box-sizing: border-box;
     width: 327px;
-    margin-right: 73px;
     font-size: 14px;
     line-height: 26px;
     color:var(--black-text);
@@ -591,6 +590,7 @@ img.welcome-sedona {
     gap: 6px;
     padding-right: 125px;
     padding-left: 125px;
+    margin: 0;
     text-align: center;
 }
 
@@ -601,7 +601,7 @@ img.welcome-sedona {
 /* Разметка каталога */
 
 .catalog-filter {
-    background-image: url(/img/catalog-imgs/background-fitler.jpg);
+    background-image: url(../img/catalog-imgs/background-fitler.jpg);
     background-color: var(--blue-hover);
     background-repeat: no-repeat;
     background-size: cover;
@@ -712,7 +712,6 @@ img.welcome-sedona {
     font-size: 12px;
     line-height: 18px;
     width: 848px;
-    padding-right: 73px;
 
     display: flex;
     flex-wrap: wrap;
@@ -722,6 +721,7 @@ img.welcome-sedona {
 
 .sorting-item-end-down {
     text-align: end;
+    margin-left: auto;
 }
 
 .sorting-item-end-up {
