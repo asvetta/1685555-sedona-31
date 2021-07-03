@@ -25,11 +25,25 @@
     --peach-light: #F4B1A4;    
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .page {
     height: 100%;
   }
 
 .page-body {
+    box-sizing: border-box;
     width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -40,7 +54,7 @@
     color: var(--black-text);
     text-transform: uppercase;
     background-color: var(--white-body);
-    box-sizing: border-box;
+    box-shadow: 0 0 30px -20px var(--black-light);
     
 
     min-height: 100%;
@@ -66,6 +80,7 @@ img {
     line-height: 26px;
     color: var(--black-text);
     background-color: var(--white-blocks);
+
     font-weight: bold;    
     box-sizing: border-box;
     margin: 0;
@@ -91,25 +106,25 @@ img {
     transform: translatex(-50%)
 }
 
-.navigation-info {
+.site-navigation-item:nth-child(1) {
     box-sizing: border-box;
     width: 200px;
     padding-left: 73px;
 }
 
-.navigation-photo {
+.site-navigation-item:nth-child(2)  {
     box-sizing: border-box;
     width: 200px;
     margin-right: 100px;
 }
 
-.navigation-map {
+.site-navigation-item:nth-child(3)  {
     box-sizing: border-box;
     width: 200px;
     text-align: end;
 }
 
-.navigation-hotels {
+.site-navigation-item:nth-child(4)  {
     box-sizing: border-box;
     width: 200px;
     margin: 0;
@@ -120,18 +135,16 @@ img {
 
 .site-navigation a {
     color: var(--black-text);
-   box-sizing: border-box;
 }
 
 .site-navigation a:hover {
     color: var(--blue-light);
-    box-sizing: border-box;
 }
 
 
 .site-navigation a:focus {
-    color: var(--grey-button);  
-    box-sizing: border-box;      
+    color: var(--black-text);  
+    opacity: 0.3;
 }
 
 
@@ -471,6 +484,11 @@ img.welcome-sedona {
     text-align: center top;
 }
 
+.footer-phone {
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--black-text)
+}
  
 .footer-phone:hover {
     color: var(--blue-light);
@@ -594,11 +612,24 @@ img.welcome-sedona {
     text-align: center;
 }
 
-
-
+.htmlacademy-logo:hover {
+    fill: var(--blue-light);
+}
 
 
 /* Разметка каталога */
+
+.catalog-body {
+    width: 1200px;
+}
+
+.active-page a {
+    color: var(--grey-button);
+}
+
+.catalog-center {
+    width: 1200px;
+}
 
 .catalog-filter {
     background-image: url(../img/catalog-imgs/background-fitler.jpg);
@@ -608,8 +639,9 @@ img.welcome-sedona {
     font-size: 14px;
     line-height: 21px;
     color: var(--white-blocks);
+    padding: 27px 73px 32px 73px;
     box-sizing: border-box;
-    padding: 27px 73px 32px 43px;
+    width: 1200px;
 }
 
 .catalog-filter-name {
@@ -634,12 +666,18 @@ img.welcome-sedona {
 .filter-column-3 {
     box-sizing: border-box;
     margin: 0;
-    padding-left: 200px;
+    margin-left: auto;
     padding-right: 73px;
     text-align: center;
     font-size: 16px;
     line-height: 21px;
     font-weight: bold;
+}
+
+.infrastructure-fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 .infrastructure-list {
@@ -651,6 +689,12 @@ img.welcome-sedona {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.accommodation-fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 .accommodation-list {
@@ -702,12 +746,14 @@ img.welcome-sedona {
     width: 200px;
     margin-left: 73px;
     padding-right: 12px;
+    margin-top: 0;
 }
 
 
 .results-sorting-list {
     list-style: none;
-    padding-left: 40px;
+    padding: 0 0 0 40px;
+    margin: 0;
     box-sizing: border-box;
     font-size: 12px;
     line-height: 18px;
@@ -743,6 +789,8 @@ img.welcome-sedona {
     font-size: 12px;
     line-height: 18px;
     width: 75px;
+    margin: 0;
+    padding: 0;
 }
 
 .results-sorting-item {
@@ -751,7 +799,7 @@ img.welcome-sedona {
     color: var(--black-text);
     opacity: 0.3;
     box-sizing: border-box;
-    width: 76px;
+    width: 100px;
 }
 
 
@@ -780,6 +828,17 @@ img.welcome-sedona {
     grid-template-rows: 1fr 1fr 1fr;
     flex-wrap: wrap;
 
+}
+
+.results-item {
+    box-sizing: border-box;
+    border-top: solid 1px var(--white-focus);
+    padding-bottom: 30px;
+}
+
+.results-item:nth-child(3) {
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--white-focus);
 }
 
 .result-name {
