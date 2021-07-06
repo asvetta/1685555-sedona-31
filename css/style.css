@@ -491,11 +491,29 @@ img.welcome-sedona {
     width: 114px;
     height: 38px;
     text-align: center;
-    background-image: url(../img/icons-buttons/minus.svg), url(../img/icons-buttons/plus.svg);
-    background-repeat: no-repeat;
-    background-position: left 10px center, right 10px center;
 }
 
+.less-more-container {
+    position: relative;
+    box-sizing: border-box;
+    width: 114px;
+    margin: 0;
+    padding: 0;
+}
+
+.less {
+    position: absolute;
+    border: none;
+    left: 10px;
+    top: 8px;
+}
+
+.more {
+    position: absolute;
+    border: none;
+    right: 10px;
+    top: 12px;
+}
 
 .find-hotel-form {
     font-weight: bold;
