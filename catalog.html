@@ -69,10 +69,8 @@
                   </fieldset>
                 </div>
                 <div class="filter-column filter-column-3">
-                  <p>
-                    <form method="get" action="https://echo.htmlacademy.ru">
                       <fieldset class="filter-item">
-                        <legend>Стоимость в сутки, ₽:</legend>
+                        <legend class="filter-legend">Стоимость в сутки, ₽:</legend>
                         <div class="price-controls">
                           <label class="min-price">
                           <input type="number" name="min-price" value="0">
@@ -91,9 +89,7 @@
                           </div>
                         </div>
                       </fieldset>
-                    </form>
                     <button class="catalog-filter-button" type="submit">Показать</button>
-                  </p>
                 </div>
             </form>
           </section>
@@ -103,11 +99,23 @@
               <div class="results-container">
                 <p class="results-sorting-name">Сортировка:</p>
                 <ul class="results-sorting-list">
-                  <li class="results-sorting-item"><a href="#">По цене</a></li>
+                  <li class="results-sorting-item sorting-item-active"><a href="#">По цене</a></li>
                   <li class="results-sorting-item"><a href="#">По типу</a></li>
                   <li class="results-sorting-item"><a href="#">По рейтингу</a></li>
-                  <li class="results-sorting-item sorting-item-end-down"><a href="#">Down</a></li>
-                  <li class="results-sorting-item sorting-item-end-up"><a href="#">Up</a></li>
+                  <li class="results-sorting-item">
+                    <a class="results-sorting-triangle sorting-item-active" href="#">
+                      <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 10L0 0H11" fill="#CACACA"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="results-sorting-item">
+                    <a class="results-sorting-triangle" href="#">
+                      <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -115,7 +123,7 @@
                 <li class="results-item">
                     <article class="amara-resort-spa">
                       <div class="results-img">
-                        <img src="img/catalog-imgs/amara-resort-spa.jpg" width="135" height="90" alt="Отель с видом на горы">
+                        <img class="hotel-picture" src="img/catalog-imgs/amara-resort-spa.jpg" width="135" height="90" alt="Отель с видом на горы">
                       </div>
                       <div class="results-text">
                         <h3 class="result-name"><a href="#">Amara Resort & Spa</a></h3>
