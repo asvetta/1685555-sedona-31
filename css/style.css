@@ -61,6 +61,7 @@
     text-transform: uppercase;
     background-color: var(--white-body);
     box-shadow: 0 0 30px -15px var(--black-light);
+    background-color: var(--white-blocks);
     
 
     min-height: 100%;
@@ -627,10 +628,10 @@ img.welcome-sedona {
     color: var(--black-text);   
     box-sizing: border-box;
     text-align: center;
-    padding-top: -20px;
+    padding-top: 0;
     padding-bottom: 0;
     padding-right:  73px;
-    padding-left: 76px;
+    padding-left: 73px;
     margin: 0;
     align-items: center;
     width: 1200px;
@@ -642,12 +643,12 @@ img.welcome-sedona {
 .footer-info {
     width: 327px;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 24px;
     font-weight: bold;
     box-sizing: border-box;
     text-align: center;
     color: var(--black-text);
-    margin-top: 26px;
+    margin-top: 28px;
     margin-bottom: auto;
 }
 
@@ -761,12 +762,15 @@ img.welcome-sedona {
     color:var(--black-text);
     align-self: center;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 65px;
+
+    display: flex;
 }
 
 
 .footer-copyright .button {
     margin-left: 10px;
+
 }
 
 .footer-copyright .button:hover {
@@ -802,6 +806,12 @@ img.welcome-sedona {
 .footer-opacity {
     background-color: var(--footer-opacity);
     height: 118px;
+    padding-left: 76px;
+}
+
+.footer-copyright span {
+    padding-bottom: 15px;
+    margin-right: 6px;
 }
 
 /* Форма оформление */
@@ -986,6 +996,7 @@ img.welcome-sedona {
     background-color: var(--white-blocks);
     box-sizing: border-box;
     padding-top: 30px;
+    margin-bottom: 7px;
 }
 
 .sorting-flex {
