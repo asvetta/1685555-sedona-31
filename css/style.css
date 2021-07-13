@@ -59,17 +59,13 @@
     color: var(--black-text);
     text-transform: uppercase;
     background-color: var(--white-body);
-    box-shadow: 0 0 30px -20px var(--black-light);
+    box-shadow: 0 0 30px -15px var(--black-light);
     
 
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-}
-
-.main-page-body {
-    position: relative;
 }
 
 a {
@@ -190,6 +186,8 @@ img {
     margin: 0;
     padding: 42px 0 52px 0; 
     text-align: center;
+    width: 1200px;
+    
 }
 
 .greetings-text p {
@@ -228,6 +226,7 @@ img.welcome-sedona {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--white-basic);
+    width: 1200px;
 }
 
 .feature-item h3 {
@@ -243,7 +242,6 @@ img.welcome-sedona {
 .feature-item-text {
     box-sizing: border-box;
     width: 400px;
-    height: 256px;
     padding-top: 46px;
     justify-content: center;
     text-align: center;
@@ -311,7 +309,7 @@ img.welcome-sedona {
     background-position: center 60px;
     box-sizing: border-box;
     width: 400px;
-    padding: 160px 0 65px;
+    padding: 160px 0 60px;
     text-align: center;
 }
 
@@ -321,7 +319,7 @@ img.welcome-sedona {
     background-position: center 62px;
     box-sizing: border-box;
     width: 400px;
-    padding: 160px 0 65px;
+    padding: 160px 0 60px;
     text-align: center;
 
 }
@@ -332,7 +330,7 @@ img.welcome-sedona {
     background-position: center 56px;
     box-sizing: border-box;
     width: 400px;
-    padding: 160px 0 65px;
+    padding: 160px 0 60px;
     text-align: center;
 }
 
@@ -346,22 +344,21 @@ img.welcome-sedona {
 
 .true-town {
     box-sizing: border-box;
-    padding: 48px 0 60px;
+    padding: 48px 0 40px;
     text-align: center;
 
 }
 
 .bridge {
     box-sizing: border-box;
-    padding: 52px 0 59px;
+    padding: 55px 0 40px;
     text-align: center;
 
 }
 
 .square {
     box-sizing: border-box;
-    padding: 50px 96px 54px;
-    height: 256px;
+    padding: 55px 96px 54px;
     text-align: center;
 
 }
@@ -426,6 +423,8 @@ img.welcome-sedona {
     flex-direction: column;
 
     position: relative;
+
+    width: 1200px;
 }
 
 
@@ -589,6 +588,7 @@ img.welcome-sedona {
     padding: 55px;
     background-color: var(--white-blocks);
     margin-right: auto;
+    box-shadow: 0 0 10px 0 var(--grey-shadow);
 
     display: flex;
     flex-wrap: wrap;
@@ -603,7 +603,10 @@ img.welcome-sedona {
 
 
 .map {
-    margin: o auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: -120px;
     text-align: center;
 }
 
@@ -614,9 +617,13 @@ img.welcome-sedona {
     color: var(--black-text);   
     box-sizing: border-box;
     text-align: center;
-    padding: 18px 73px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-right:  73px;
+    padding-left: 76px;
     margin: 0;
     align-items: center;
+    height: 120px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -628,8 +635,20 @@ img.welcome-sedona {
     line-height: 26px;
     font-weight: bold;
     box-sizing: border-box;
-    text-align: center top;
+    text-align: center;
     color: var(--black-text);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hashtag {
+    margin: 0;
+    margin-top: -10px;
+}
+
+.contacts {
+    margin-top: 12px;
+    margin-bottom: 0;
 }
 
 
@@ -646,7 +665,6 @@ img.welcome-sedona {
 }
 
     
-
 .footer-phone:focus {
     color: var(--grey-button); 
     text-align: center;
@@ -730,10 +748,14 @@ img.welcome-sedona {
     font-size: 14px;
     line-height: 26px;
     color:var(--black-text);
-    justify-content: center;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    align-self: center;
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+.footer-copyright .button {
+    margin-left: 10px;
 }
 
 .footer-copyright .button:hover {
@@ -769,10 +791,6 @@ img.welcome-sedona {
 .footer-opacity {
     background-color: var(--white-blocks);
     opacity: 0.8;
-    
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 
 /* Форма оформление */
@@ -797,6 +815,11 @@ img.welcome-sedona {
 
 .input-flex-lessmore {
     margin-bottom: 54px;
+}
+
+.left {
+    width: 65px;
+    margin-left: auto;
 }
 
 
@@ -1327,7 +1350,7 @@ img.welcome-sedona {
     background-image: url(../img/icons-buttons/checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
-  }
+}
 
   .filter-item {
     margin: 0;
@@ -1458,3 +1481,11 @@ img.welcome-sedona {
     left: 75%;
 }
 
+.min-price input, .max-price input{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white-blocks);
+    opacity: 1;
+    font-weight: normal;
+}
