@@ -42,11 +42,11 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 .page {
     height: 100%;
-  }
+}
 
 .page-body {
     box-sizing: border-box;
@@ -525,7 +525,13 @@ img.welcome-sedona {
     box-sizing: border-box;
     width: 346px;
     height: 38px;
-    padding-left: 10px;
+    padding-left: 13px;
+    padding-top: 0;
+}
+
+.calendar-container ::placeholder, .less-more-container ::placeholder {
+    opacity: 1;
+    color: var(--black-text);
 }
 
 .calendar-container {
@@ -614,8 +620,8 @@ img.welcome-sedona {
 
 .map {
     margin-top: 0;
-    margin-left: auto;
-    margin-right:auto;
+    margin-left: 1px;
+    margin-right:0;
     margin-bottom: -120px;
     text-align: center;
     width: 1200px;
@@ -628,13 +634,14 @@ img.welcome-sedona {
     color: var(--black-text);   
     box-sizing: border-box;
     text-align: center;
-    padding-top: 0;
+    
     padding-bottom: 0;
     padding-right:  73px;
-    padding-left: 73px;
+    padding-left: 76px;
     margin: 0;
     align-items: center;
     width: 1200px;
+    min-height: 118px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -650,6 +657,8 @@ img.welcome-sedona {
     color: var(--black-text);
     margin-top: 28px;
     margin-bottom: auto;
+    margin-left: -3px;
+    padding-right: auto;
 }
 
 .hashtag {
@@ -762,7 +771,8 @@ img.welcome-sedona {
     color:var(--black-text);
     align-self: center;
     margin: 0;
-    padding-left: 65px;
+    padding-left: 64px;
+    padding-bottom: 5px;
 
     display: flex;
 }
@@ -806,12 +816,12 @@ img.welcome-sedona {
 .footer-opacity {
     background-color: var(--footer-opacity);
     height: 118px;
-    padding-left: 76px;
+    padding-left: 79px;
 }
 
 .footer-copyright span {
-    padding-bottom: 15px;
-    margin-right: 6px;
+    margin-top: 3px;
+    margin-right: 7px;
 }
 
 /* Форма оформление */
@@ -831,11 +841,12 @@ img.welcome-sedona {
 
 
 .input-flex-calendar {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .input-flex-lessmore {
-    margin-bottom: 53px;
+    margin-bottom: 54px;
+    margin-top: 2px;
 }
 
 .left {
@@ -897,7 +908,7 @@ img.welcome-sedona {
 }
 
 .filter-column {
-    width: 326px;
+    width: 327px;
 }
 
 .filter-column-3 {
@@ -1167,7 +1178,8 @@ img.welcome-sedona {
     color: var(--white-blocks);
     background-color: var(--blue-light);
     box-sizing: border-box;
-    padding: 4px 15px;
+    padding-left: 17px;
+    padding-top: 4px;
     height: 27px;
 }
 
@@ -1249,6 +1261,7 @@ img.welcome-sedona {
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 3px;
     padding-top: 4px;
     height: 27px;
 }
@@ -1373,55 +1386,55 @@ img.welcome-sedona {
     background-position: 0 0;
 }
 
-    .catalog-filter-checkbox:checked+label::before {
-        display: none;
+.catalog-filter-checkbox:checked+label::before {
+    display: none;
 }
 
-  .filter-item {
+.filter-item {
     margin: 0;
     padding: 0;
     border: none;
-  }
+}
 
-  .range-filter {
+.range-filter {
     width: 317px;
     margin-top: 11px;
-  }
+}
 
-  .filter-item legend {
+.filter-item legend {
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
     font-weight: 700;
-  }
+}
 
-  .range-controls {
+.range-controls {
     box-sizing: content-box;
     height: 20px;
     position: relative;
     padding-top: 9px;
-  }
+}
 
-  .range-controls .scale {
+.range-controls .scale {
     height: 2px;
-  }
+}
 
-  .scale {
+.scale {
     background: var(--white-opacity); 
-  }
+}
 
-  .bar {
+.bar {
     width: 75%;
     margin-left: 0;
     background: var(--white-blocks);
-  }
+}
 
-  .range-controls .bar {
+.range-controls .bar {
     width: 80%;
     height: 2px;
-  }
+}
 
-  .range-controls .toggle {
+.range-controls .toggle {
     width: 6px;
     height: 6px;
     padding: 0;
@@ -1435,9 +1448,9 @@ img.welcome-sedona {
     left: -1px;
 
     cursor: pointer;
-  }
+}
 
-  .toggle:hover {
+.toggle:hover {
     width: 6px;
     height: 6px;
     border: 10px solid var(--white-blocks);
@@ -1445,21 +1458,21 @@ img.welcome-sedona {
     box-shadow: 0 3px 2px 0 var(--grey-shadow);
 }
 
-  .range-controls .toggle-min {
+.range-controls .toggle-min {
     left: 0;
-  }
+}
   
-  .range-controls .toggle-max {
+.range-controls .toggle-max {
     left: 251px;
-  }
+}
 
-  .price-controls label {
+.price-controls label {
     text-transform: uppercase;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 16px;
-  }
+}
 
-  .price-controls input {
+.price-controls input {
     box-sizing: border-box;
     width: 158px;
     height: 32px;
@@ -1473,11 +1486,12 @@ img.welcome-sedona {
 
     font-family: inherit;
     font-size: inherit;
-  }
+}
 
-  .filter-legend {
+.filter-legend {
     margin-bottom: 10px;
-  }
+    margin-left: 3px;
+}
 
 .price-controls {
     padding: auto;
@@ -1516,5 +1530,6 @@ img.welcome-sedona {
 
 .min-price ::placeholder, .max-price ::placeholder{
     opacity: 1;
-    color: var(--white-blocks)
+    color: var(--white-blocks);
 }
+
