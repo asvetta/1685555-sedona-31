@@ -176,7 +176,6 @@ img {
 
 .greetings-decoration {
     position: absolute;
-    left: start;
     top: 509px;
 }
 
@@ -482,20 +481,19 @@ img.welcome-sedona {
 
 .form-background {
     background-color: var(--grey-form);
-    border: none;
+    border: 2px solid var(--grey-form);
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .form-background:hover {
     background-color: var(--grey-form-hover);
-    border: none;
+    border: 2px solid var(--grey-form-hover);
 }
 
 .form-background:focus {
     background-color: var(--white-blocks);
     border: 2px solid var(--white-focus);
-    outline: none;
 }
 
 .form-date {
@@ -506,7 +504,7 @@ img.welcome-sedona {
     padding-left: 13px;
 }
 
-.calendar-container ::placeholder, .less-more-container ::placeholder {
+.calendar-container::placeholder, .less-more-container::placeholder {
     opacity: 1;
     color: var(--black-text);
 }
@@ -954,7 +952,6 @@ img.welcome-sedona {
     height: 36px;
     border: 2px solid var(--white-blocks);
     border-radius: 3px;
-    padding: auto;
     text-transform: uppercase;
     margin-top: 15px;
     margin-left: 85px;
@@ -972,7 +969,7 @@ img.welcome-sedona {
     background-color: var(--white-blocks);
     box-sizing: border-box;
     padding-top: 30px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .sorting-flex {
@@ -996,7 +993,7 @@ img.welcome-sedona {
 
 .results-sorting-list {
     list-style: none;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 34px;
     margin: 0;
     box-sizing: border-box;
     font-size: 12px;
@@ -1005,8 +1002,8 @@ img.welcome-sedona {
 
     display: flex;
     flex-wrap: wrap;
-    vertical-align: text-top;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .results-container {
@@ -1031,7 +1028,7 @@ img.welcome-sedona {
     font-size: 12px;
     line-height: 12px;
     box-sizing: border-box;
-    width: 82px;
+    margin-right: 34px;
 }
 
 .results-sorting-item a {
@@ -1058,31 +1055,32 @@ img.welcome-sedona {
     opacity: 1;
 }
 
+.sorting-item-active {
+    margin-left: 6px;
+}
+
 .sorting-item-active path {
     fill: var(--blue-light);
 }
 
-.results-sorting-item:nth-child(4) {
+.results-sorting-item:last-child {
     text-align: end;
     margin-left: auto;
-    width: 23px;
-}
-
-.results-sorting-item:nth-child(5) {
-    text-align: end;
     margin-right: 73px;
-    width: 23px;
     align-self: flex-end;
+    margin-top: 7px;
 }
 
-.results-sorting-item:nth-child(4) a, .results-sorting-item:nth-child(5) a{
+.triangle a{
     border: none;
     opacity: 1;
 }
 
-.triangle {
-    margin-top: 7px;
+.triangle:hover a{
+    border: none;
+    opacity: 1;
 }
+
 
 .results-sorting-triangle path, .results-sorting-triangle path {
     color: var(--grey-extra-light);
@@ -1111,7 +1109,7 @@ img.welcome-sedona {
     box-sizing: border-box;
     border-top: solid 1px var(--white-focus);
     padding-top: 30px;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
     width: 1200px;
 }
 
@@ -1196,7 +1194,7 @@ img.welcome-sedona {
     height: 17px;
     margin-left: auto;
     margin-right: 73px;
-    margin-top: auto;
+    margin-top: 7px;
     margin-bottom: 47px;
     background-image: url(../img/icons-buttons/star.svg);
     background-repeat: space;
@@ -1229,26 +1227,12 @@ img.welcome-sedona {
     height: 27px;
 }
 
-.amara-resort-spa {
+.hotel-card {
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
-
-}
-
-.desert-quail-inn {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.villas-at-poco-diablo {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    margin-bottom: -1px;
 }
 
 .results-img {
@@ -1480,7 +1464,6 @@ img.welcome-sedona {
 }
 
 .price-controls {
-    padding: auto;
     border: 2px solid var(--white-blocks);
     border-radius: 3px;
     box-sizing: border-box;
@@ -1514,7 +1497,7 @@ img.welcome-sedona {
     font-weight: normal;
 }
 
-.min-price ::placeholder, .max-price ::placeholder{
+.min-price::placeholder, .max-price::placeholder{
     opacity: 1;
     color: var(--white-blocks);
 }
