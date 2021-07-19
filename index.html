@@ -7,7 +7,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -101,7 +101,7 @@
       <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="find-hotel-item input-flex-calendar" for="check-in">Дата заезда:</label>
         <div class="calendar-container input-flex-calendar">
-          <input class="form-background form-date" type="text" name="check-in" id="check-in"
+          <input class="form-background form-date-in" type="text" name="check-in" id="check-in"
             placeholder="24 апреля 2017">
           <button class="calendar button-input" type="button">
             <span class="visually-hidden">Выберите подходящую дату в календаре</span>
@@ -117,7 +117,7 @@
         </div>
         <label class="find-hotel-item input-flex-calendar" for="check-out">Дата выезда:</label>
         <div class="calendar-container input-flex-calendar">
-          <input class="form-background form-date" type="text" name="check-out" id="check-out"
+          <input class="form-background form-date-out" type="text" name="check-out" id="check-out"
             placeholder="4 июля 2017">
           <button class="calendar button-input" type="button">
             <span class="visually-hidden">Выберите подходящую дату в календаре</span>
@@ -133,7 +133,7 @@
         </div>
         <label class="find-hotel-item input-flex-lessmore" for="adults">Взрослые:</label>
         <div class="less-more-container input-flex-lessmore">
-          <input class="form-background form-people" type="text" name="adults" id="adults" placeholder="2">
+          <input class="form-background form-adults" type="text" name="adults" id="adults" placeholder="2">
           <button class="less button-input" type="button">
             <span class="visually-hidden">Уменьшить количество на единицу</span>
             <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +151,7 @@
         </div>
         <label class="find-hotel-item input-flex-lessmore left" for="kids">Дети:</label>
         <div class="less-more-container input-flex-lessmore">
-          <input class="form-background form-people" type="text" name="kids" id="kids" placeholder="0">
+          <input class="form-background form-kids" type="text" name="kids" id="kids" placeholder="0">
           <button class="less button-input" type="button">
             <span class="visually-hidden">Уменьшить количество на единицу</span>
             <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,9 +172,10 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Где находится Седона?</h2>
-      <a href="https://goo.gl/maps/r3oEEsJiwY8pr3YB9">
-        <img src="img/map.png" width="1199" height="594" alt="Как добраться до города">
-      </a>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d486491.42802501784!2d-111.93723599929747!3d34.93879926337647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1626663251841!5m2!1sru!2sru"
+        width="1199" height="594" style="border:0;" allowfullscreen="" loading="lazy"
+        title="Расположение города на карте"></iframe>
     </section>
   </main>
   <footer class="main-footer footer-opacity">
@@ -262,6 +263,9 @@
       </a>
     </p>
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
