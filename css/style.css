@@ -169,7 +169,7 @@ img {
   width: 1200px;
   height: 57px;
 
-  background-image: url(../img/main-page-imgs/shape.png);
+  background-image: url(../img/main-page-imgs/shape.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,11 +187,6 @@ img {
   padding: 0;
   height: 509px;
   width: 1200px;
-}
-
-.greetings-decoration {
-  position: absolute;
-  top: 509px;
 }
 
 .greetings-text {
@@ -430,10 +425,6 @@ img.welcome-sedona {
   width: 1200px;
 }
 
-.modal-hide {
-  visibility: hidden;
-}
-
 .modal-descripion {
   text-align: center;
   margin-top: 8px;
@@ -601,6 +592,7 @@ input:focus-visible {
   text-align: left;
   width: 568px;
   padding: 55px;
+  padding-top: 53px;
   background-color: var(--white-blocks);
   margin-right: auto;
   box-shadow: 0 2px 10px 0 var(--grey-shadow);
@@ -613,24 +605,29 @@ input:focus-visible {
   position: absolute;
   top: 293px;
   left: 316px;
+}
 
-  animation-name: stretch;
-  animation-duration: 0.3s;
+.modal-hide {
+  display: none;
 }
 
 .map {
   margin-top: 0;
-  margin-left: 1px;
-  margin-right: 0;
-  margin-bottom: -120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -124px;
   text-align: center;
   width: 1200px;
 }
 
 .map iframe {
-  width: 1200px;
+  width: 100%;
   height: 594px;
   border: 0;
+}
+
+.map-hide {
+  display: none;
 }
 
 .main-footer {
@@ -645,7 +642,7 @@ input:focus-visible {
   margin: 0;
   align-items: center;
   width: 1200px;
-  min-height: 118px;
+  min-height: 120px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -819,8 +816,8 @@ input:focus-visible {
 
 .footer-opacity {
   background-color: var(--footer-opacity);
-  height: 118px;
-  padding-left: 79px;
+  min-height: 120px;
+  padding-left: 75px;
   z-index: 1;
 }
 
@@ -1544,41 +1541,4 @@ input:focus-visible {
 .max-price::placeholder {
   opacity: 1;
   color: var(--white-blocks);
-}
-
-/* Анимация */
-
-@keyframes stretch {
-
-  40% {
-    height: 40%;
-  }
-
-  50% {
-    height: 50%;
-  }
-
-  60% {
-    height: 60%;
-  }
-
-  70% {
-    height: 70%;
-  }
-
-  80% {
-    height: 80%;
-  }
-
-  90% {
-    height: 90%;
-  }
-
-  95% {
-    height: 95%;
-  }
-
-  100% {
-    height: 100%;
-  }
 }
